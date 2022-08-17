@@ -177,18 +177,18 @@ optionBtn.addEventListener('click',()=>{
     
 })
 
-// module.export= findLocation=()=>{
-//     const success=(position)=>{
-//         const latitude= position.coords.latitude;
-//         const longitude= position.coords.longitude;
-//         console.log(latitude + "  and  " + longitude);
-//     }
-//     const errormsg=()=>{
-//         console.log("unable to retrive location");
-//     }
-//     navigator.geolocation.getCurrentPosition(success, errormsg);
-// }
-//   findLocation();
+module.export= findLocation=()=>{
+    const success=(position)=>{
+        const latitude= position.coords.latitude;
+        const longitude= position.coords.longitude;
+        console.log(latitude + "  and  " + longitude);
+    }
+    const errormsg=()=>{
+        console.log("unable to retrive location");
+    }
+    navigator.geolocation.getCurrentPosition(success, errormsg);
+}
+  findLocation();
 
 
     // main wrapper
