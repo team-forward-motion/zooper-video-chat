@@ -12,9 +12,9 @@ In the ever-evolving landscape of online education, ensuring a safe and conduciv
 
 1. Intruder Detection: The web application incorporates sophisticated intrusion detection mechanisms. When the "Report" button is pressed by an authorized user (teacher/admin), two essential steps are initiated:
 
-    1. a. VPN Detection: A Python script is executed to detect if an intruder is using a Virtual Private Network (VPN). VPN usage can potentially allow students to bypass security measures. The system will identify VPN usage and take appropriate actions.
+    1. VPN Detection: A Python script is executed to detect if an intruder is using a Virtual Private Network (VPN). VPN usage can potentially allow students to bypass security measures. The system will identify VPN usage and take appropriate actions.
 
-    1. b. IP and MAC Tracking: A JavaScript script is activated to track the MAC and IP addresses of participants in the online class. This ensures that all users are registered and authorized to attend the class.
+    2. IP and MAC Tracking: A JavaScript script is activated to track the MAC and IP addresses of participants in the online class. This ensures that all users are registered and authorized to attend the class.
 
 2. Multi-Factor Authentication: To prevent classroom disruption by existing members, a multi-factor authentication system is implemented. Each student is associated with one default device, identified by its MAC and IP addresses. The details are securely stored in the database and can only be accessed by the admin or designated personnel. If a student wishes to join from a new device, they must obtain a unique key from the admin. This key, when provided, grants access to the class from the new device.
 
@@ -22,13 +22,13 @@ In the ever-evolving landscape of online education, ensuring a safe and conduciv
 
 4. Admin Control: The admin/teacher plays a central role in maintaining the class environment. They can:
 
-    4. a. Create Classes: Admins can create and manage multiple classes within the web application.
+    1. Create Classes: Admins can create and manage multiple classes within the web application.
 
-    4. b. Manage Students: Admins register students for classes and associate their MAC and IP addresses with authorized devices.
+    2. Manage Students: Admins register students for classes and associate their MAC and IP addresses with authorized devices.
 
-    4. c. Intrusion Handling: In the event of an intrusion, the admin/teacher can remove unauthorized participants from the class. Details such as IP addresses, MAC addresses, and the geolocation of intruding IPs are logged both locally and in the web app's database for future reference.
+    3. Intrusion Handling: In the event of an intrusion, the admin/teacher can remove unauthorized participants from the class. Details such as IP addresses, MAC addresses, and the geolocation of intruding IPs are logged both locally and in the web app's database for future reference.
 
-    4. d. Chat Monitoring: The admin/teacher has the ability to monitor censored words and review chat interactions. The final decision regarding the appropriateness of content is at their discretion.
+    4. Chat Monitoring: The admin/teacher has the ability to monitor censored words and review chat interactions. The final decision regarding the appropriateness of content is at their discretion.
 
 ### Conclusion:
 
